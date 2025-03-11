@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>Noneindex.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
+    </url>
+    <url>
+        <loc>Noneadmin-guide.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="Noneadmin-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/admin-guide.html"/>
+    </url>
+    <url>
+        <loc>Nonedev-guide.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="Nonedev-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/dev-guide.html"/>
+    </url>
+    <url>
+        <loc>Noneuser-guide.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="Noneuser-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/user-guide.html"/>
+    </url>
+    <url>
+        <loc>Noneen/index.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="Noneindex.html"/>
+    </url>
+    <url>
+        <loc>Noneen/admin-guide.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/admin-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="Noneadmin-guide.html"/>
+    </url>
+    <url>
+        <loc>Noneen/dev-guide.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/dev-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="Nonedev-guide.html"/>
+    </url>
+    <url>
+        <loc>Noneen/user-guide.html</loc>
+        <lastmod>2025-03-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/user-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="Noneuser-guide.html"/>
+    </url>
+</urlset>
