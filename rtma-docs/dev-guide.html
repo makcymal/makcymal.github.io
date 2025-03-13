@@ -55,7 +55,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -246,7 +255,9 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="index.html" title="RTMA Docs" class="md-nav__button md-logo" aria-label="RTMA Docs" data-md-component="logo">
       
@@ -390,7 +401,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Принятая терминология
+      Общий обзор
     </span>
   </a>
   
@@ -399,44 +410,53 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Описание протоколов
+      Принятая терминология
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Описание протоколов">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Модели данных">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#metric" class="md-nav__link">
     <span class="md-ellipsis">
-      Клиент → сервер
+      Metric
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#prompt" class="md-nav__link">
     <span class="md-ellipsis">
-      Сервер → клиент
+      Prompt
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#report" class="md-nav__link">
     <span class="md-ellipsis">
-      Сервер → сенсор
+      Report
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#specif" class="md-nav__link">
     <span class="md-ellipsis">
-      Сенсор → сервер
+      Specif
     </span>
   </a>
   
@@ -448,7 +468,31 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Взаимодействие компонентов
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Взаимодействие компонентов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API сервера (со стороны клиента)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       Реализация сенсоров
     </span>
@@ -457,7 +501,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       Реализация сервера
     </span>
@@ -489,119 +533,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Принятая терминология
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Описание протоколов
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Описание протоколов">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Клиент → сервер
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Сервер → клиент
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Сервер → сенсор
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Сенсор → сервер
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Реализация сенсоров
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      Реализация сервера
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      Реализация веб-приложения
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -616,17 +547,73 @@
 
 <h1 id="_1">Разработчикам</h1>
 <p>Данный материал описывает подробности реализации системы мониторинга и предназачен для разработчиков, занимающихся дальнейшим развитием системы.</p>
-<h2 id="_2">Принятая терминология</h2>
-<ul>
+<h2 id="_2">Общий обзор</h2>
+<p><strong>Три компонента составляют основу системы:</strong></p>
+<ol>
 <li>
-<p><strong><code>metric</code></strong> (<em>метрика</em>, <em>показатель</em>) &mdash; конкретный показатель, данные по которому может собирать сенсор. Например: <code>freq</code> (частота процессора) или <code>cached</code> (объем кешей).</p>
+<p><strong>Сенсор</strong> &ndash; программа, исполняемая на множестве вычислительных узлов (физических или виртуальных), собирающая данные об объемах сетевого трафика и использовании аппаратных ресурсов.</p>
 </li>
 <li>
-<p><strong><code>rubric</code></strong> (<em>рубрика</em>) &mdash; группа логически связанных показателей.</p>
+<p><strong>Клиент</strong> &ndash; программа, запрашивающая и получающая мониторинговые данные с сенсоров. Частным случаем клиента является</p>
+<ul>
+<li><strong>Веб-приложение</strong> &ndash; клиент, позволяющий просматривать мониторинговые данные в браузере.</li>
+</ul>
+</li>
+<li>
+<p><strong>Сервер</strong> &ndash; программа, исполняемая на одном устройстве, непрерывно собирающая данные с сенсоров, обрабатывающая и агрегирующая их и отправляющая по запросу в веб-приложение.</p>
+</li>
+</ol>
+<p>Взаимодействие всех компонентов &ndash; сенсоров, сервера и клиентов, можно описать следующей схемой:</p>
+<figure>
+  <a class="glightbox" href="assets/dev-guide/components-interaction.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Components Interaction" src="assets/dev-guide/components-interaction.svg" width="65%" /></a>
+</figure>
+<p>Клиенты никогда не взаимодействуют с сенсорами напрямую, все взаимодействие происходит посредством сервера между ними.</p>
+<hr />
+<p><strong>Для удобства работы с сенсорами они имеют следующие свойства:</strong></p>
+<ul>
+<li><code>sensor_id</code> &ndash; идентификатор, привязанный к конкретной машине, на которой запущен сенсор. Он не изменяется и является уникальным среди всех сенсоров (если только никакие два сенсора не запущены на одной машине).</li>
+<li><code>sensor_label</code> и <code>sensor_group</code> &ndash; метка и группа сенсора, не привязано к конкретной машине, устанавливается изначально в файле конфигурации сенсора и может быть изменено (при этом файл конфигурации перезаписывается для сохранения изменений). Метка должна быть уникальной в рамках одной группы (в разных группах два сенсора могут иметь одинаковую метку). Метка и группа создают двухступенчатую иерархию сенсоров, где каждый сенсор принадлежит сначала какой-то группе, а затем внутри нее обладает своей меткой. Это позволяет производить мониторинг целых групп сенсоров. При изменении группы сенсора считается, что он перемещается в другую группу (даже если это новая группа).</li>
+</ul>
+<hr />
+<p><strong>Кратко взаимодействие компонентов можно описать следующим образом:</strong></p>
+<ol>
+<li>
+<p>Клиент формирует запрос к серверу с тем, какие мониторинговые данные он хочет получать, и от какого сенсора (или группы сенсоров).</p>
+</li>
+<li>
+<p>Сервер для каждого сенсора агрегирует запросы к нему от всех клиентов в один запрос и отправляет его сенсору.</p>
+</li>
+<li>
+<p>Сервер <strong>подписывается</strong> на получение мониторинговых данных сенсора с этим агрегированным запросом.</p>
+</li>
+<li>
+<p>Сенсор начинает собирать мониторинговые данные (то, что он собирает, определяется запросом от сервера) и отправлять серверу.</p>
+</li>
+<li>
+<p>Сервер разбирает пришедшие мониторинговые данные и отправляет клиентам то, что они запрашивали (и ничего сверх того).</p>
+</li>
+<li>
+<p>При отключении последнего клиента, запрашивающего мониторинг некоторого сенсора, сервер <strong>отписывается</strong> от этого сенсора, и тот приостанавливает свою работу до следующей подписки.</p>
+</li>
+</ol>
+<blockquote>
+<p>Сенсоры работают по принципу on-demand: мониторинговые данные собираются и передаются только в случае, если есть запрос со стороны сервера. Такой запрос к конкретному сенсору у сервера появляется по двум причинам: подключился клиент и хочет просмотреть данные с одного сенсора или группы сенсоров, или сервер по своей воле собирает данные с сенсора, чтобы в любой момент по запросу клиента он мог сформировать статистику за последние 24 часа. Такой подход снижает расходы на трафик и вычислительные ресурсы для передачи мониторинговых данных, хотя и усложняет устройство всей системы.</p>
+</blockquote>
+<h2 id="_3">Принятая терминология</h2>
+<p>Данные термины в том или ином виде встречаются в исходном коде и требуются для того, чтобы систематизировать наименование конкретных сущностей в коде, комментариях, документации и среди разработчиков.</p>
+<ul>
+<li>
+<p><strong><code>metric</code></strong> (<em>метрика</em>) &ndash; наименование показателя, данные по которому может собирать сенсор. Например: <code>"freq"</code> (частота процессора) или <code>"cached"</code> (объем кешей).</p>
+</li>
+<li>
+<p><strong><code>measurement</code></strong> (<em>измерение</em>) &ndash; значение, которое сенсор ставит в соответствие конкретной метрике.</p>
+</li>
+<li>
+<p><strong><code>rubric</code></strong> (<em>рубрика</em>) &ndash; несколько логически связанных метрик.</p>
 <details class="abstract">
 <summary>Список рубрик и метрик:</summary>
 <details class="quote">
-<summary><code>cpu</code> &mdash; метрики, относящиеся к загруженности процессора:</summary>
+<summary><code>cpu</code> &ndash; метрики, относящиеся к загруженности процессора:</summary>
 <ul>
 <li><code>system</code>: процессорное время, затраченное процессами, выполняющимися в kernel mode,</li>
 <li><code>user</code>: процессорное время, затраченное процессами, выполняющимися в user mode,</li>
@@ -642,7 +629,7 @@
 </ul>
 </details>
 <details class="quote">
-<summary><code>net</code> &mdash; метрики, относящиеся к сетевому трафику:</summary>
+<summary><code>net</code> &ndash; метрики, относящиеся к сетевому трафику:</summary>
 <ul>
 <li><code>recv</code>: объем полученных данных,</li>
 <li><code>sent</code>: объем отправленных данных,</li>
@@ -653,7 +640,7 @@
 </ul>
 </details>
 <details class="quote">
-<summary><code>mem</code> &mdash; метрики, относящиеся к оперативной памяти:</summary>
+<summary><code>mem</code> &ndash; метрики, относящиеся к использованию оперативной памяти:</summary>
 <ul>
 <li><code>used</code>: объем используемой памяти,</li>
 <li><code>cached</code>: объем оперативной памяти, используемой для кешей,</li>
@@ -662,7 +649,7 @@
 </ul>
 </details>
 <details class="quote">
-<summary><code>dsk</code> &mdash; метрики, относящиеся к постоянной памяти:</summary>
+<summary><code>dsk</code> &ndash; метрики, относящиеся к использованию постоянной памяти:</summary>
 <ul>
 <li><code>used</code>: объем используемой постоянной памяти,</li>
 <li><code>read</code>: объем данных, прочтенных из постоянной памяти,</li>
@@ -672,10 +659,189 @@
 </details>
 </li>
 <li>
-<p><strong><code>prompt</code></strong> (<em>промпт</em>) &mdash; запрос для сенсора со списком показателей, которые ему необходимо собирать и отправлять. Представляет из себя JSON-документ, перечисляющий метрики, данные по которым будет собирать сенсор, а также интервал времени в секундах, в течение которого сенсор будет спать до следующего сбора и отправки данных.</p>
+<p><strong><code>prompt</code></strong> (<em>промпт</em>) &ndash; запрос для сенсора со списком метрик, которые ему необходимо собирать и отправлять. Перечисляет метрики, которые будет собирать сенсор, а также интервал времени в секундах, в течение которого сенсор будет спать до следующего сбора и отправки измерений.</p>
+</li>
+<li>
+<p><strong><code>unit</code></strong> &ndash; <em>единица измерения</em> каждой отдельной метрики. Одна метрикa может иметь разную единицу измерения в разных промптах, например, <code>mem.used</code> может быть выражен в килобайтах или в процентах.</p>
+<details class="abstract">
+<summary>Единицы измерения по умолчанию:</summary>
+<table>
+<thead>
+<tr>
+<th><code>cpu</code></th>
+<th style="text-align: center;">system</th>
+<th style="text-align: center;">user</th>
+<th style="text-align: center;">nice</th>
+<th style="text-align: center;">idle</th>
+<th style="text-align: center;">iowait</th>
+<th style="text-align: center;">irq</th>
+<th style="text-align: center;">softirq</th>
+<th style="text-align: center;">steal</th>
+<th style="text-align: center;">guest</th>
+<th style="text-align: center;">guest_nice</th>
+<th style="text-align: center;">freq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: center;">mhz</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><code>net</code></th>
+<th style="text-align: center;">recv</th>
+<th style="text-align: center;">sent</th>
+<th style="text-align: center;">errin</th>
+<th style="text-align: center;">errout</th>
+<th style="text-align: center;">dropin</th>
+<th style="text-align: center;">dropout</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit</td>
+<td style="text-align: center;">kb</td>
+<td style="text-align: center;">kb</td>
+<td style="text-align: center;">pcs</td>
+<td style="text-align: center;">pcs</td>
+<td style="text-align: center;">pcs</td>
+<td style="text-align: center;">pcs</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><code>mem</code></th>
+<th style="text-align: center;">used</th>
+<th style="text-align: center;">cached</th>
+<th style="text-align: center;">shared</th>
+<th style="text-align: center;">swap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit</td>
+<td style="text-align: center;">kb</td>
+<td style="text-align: center;">kb</td>
+<td style="text-align: center;">kb</td>
+<td style="text-align: center;">kb</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><code>dsk</code></th>
+<th style="text-align: center;">used</th>
+<th style="text-align: center;">read</th>
+<th style="text-align: center;">write</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit</td>
+<td style="text-align: center;">kb</td>
+<td style="text-align: center;">kb</td>
+<td style="text-align: center;">kb</td>
+</tr>
+</tbody>
+</table>
+</details>
+</li>
+<li>
+<p><strong><code>report</code></strong> (<em>репорт</em>) &ndash; собрание измерений сенсора метрик, перечисленных в некотором промпте. Длительность сна сенсора перед очередным сбором измерений, формированием репорта и его отправкой определяется полем <code>interval</code> промпта.</p>
+</li>
+<li>
+<p><strong><code>specif</code></strong> &ndash; <em>технические характеристики</em> машины, на которой запущен сенсор. Используется в качестве справки в веб-приложении, а также для расчета показателей, выраженных в процентах.</p>
+</li>
+</ul>
+<h2 id="_4">Модели данных</h2>
+<p>Далее приводится описание и примеры моделей данных, фигурирующих во взаимодействии между клиентами, сервером и сенсорами. Использование одинаковых, четко регламентированных моделей данных во всех компонентах делает проще обеспечение корректности работы всей системы и поддержку кодовой базы.</p>
+<p>Описание моделей данных приводится в псевдокоде, но оно легко переносится и в классы Python, и в документы JSON (а значит, и в объекты JavaScript). Конкретные примеры объектов данных приводятся в формате JSON, посколько это предпочтительный способ взаимодействия компонентов системы.</p>
+<h3 id="metric"><code>Metric</code></h3>
+<details class="note">
+<summary>Описание модели <code>CpuMetric</code>:</summary>
+<p>Строковый литерал со следующими возможными значениями:</p>
+<p><code>system</code> <code>user</code> <code>nice</code> <code>idle</code> <code>iowait</code> <code>irq</code> <code>softirq</code> <code>steal</code> <code>guest</code> <code>guest_nice</code> <code>freq</code></p>
+</details>
+<details class="note">
+<summary>Описание модели <code>NetMetric</code>:</summary>
+<p>Строковый литерал со следующими возможными значениями:</p>
+<p><code>recv</code> <code>sent</code> <code>errin</code> <code>errout</code> <code>dropin</code> <code>dropout</code></p>
+</details>
+<details class="note">
+<summary>Описание модели <code>MemMetric</code>:</summary>
+<p>Строковый литерал со следующими возможными значениями:</p>
+<p><code>used</code> <code>cached</code> <code>shared</code> <code>swap</code></p>
+</details>
+<details class="note">
+<summary>Описание модели <code>DskMetric</code>:</summary>
+<p>Строковый литерал со следующими возможными значениями:</p>
+<p><code>used</code> <code>read</code> <code>write</code></p>
+</details>
+<h3 id="prompt"><code>Prompt</code></h3>
+<details class="note">
+<summary>Описание модели <code>Prompt</code>:</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">Prompt</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># длительность сна сенсора перед очередным сбором измерений, формированием репорта и его отправкой</span>
+<span class="w">    </span><span class="c1"># по умолчанию: 1</span>
+<span class="w">    </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+
+<span class="w">    </span><span class="c1"># метрики, относящиеся к загруженности процессора</span>
+<span class="w">    </span><span class="nt">cpu</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># метрики, показатели которых будет собирать сенсор</span>
+<span class="w">        </span><span class="c1"># по умолчанию: []</span>
+<span class="w">        </span><span class="nt">metrics</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list[CpuMetric]</span>
+
+<span class="w">        </span><span class="c1"># будет ли сенсор собирать показатели по каждому ядру отдельно или агрегировать по всем</span>
+<span class="w">        </span><span class="c1"># по умолчанию: false</span>
+<span class="w">        </span><span class="nt">per_core</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
+
+<span class="w">    </span><span class="c1"># метрики, относящиеся к сетевому трафику</span>
+<span class="w">    </span><span class="nt">net</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># метрики, показатели которых будет собирать сенсор</span>
+<span class="w">        </span><span class="c1"># по умолчанию: []</span>
+<span class="w">        </span><span class="nt">metrics</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list[NetMetric]</span>
+
+<span class="w">        </span><span class="c1"># будет ли сенсор собирать показатели по каждой сетевой карте отдельно или агрегировать по всем</span>
+<span class="w">        </span><span class="c1"># по умолчанию: false</span>
+<span class="w">        </span><span class="nt">per_card</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
+
+<span class="w">    </span><span class="c1"># метрики, относящиеся к использованию оперативной памяти</span>
+<span class="w">    </span><span class="nt">mem</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># метрики, показатели которых будет собирать сенсор</span>
+<span class="w">        </span><span class="c1"># по умолчанию: []</span>
+<span class="w">        </span><span class="nt">metrics</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list[MemMetric]</span>
+
+<span class="w">    </span><span class="c1"># метрики, относящиеся к использованию постоянной памяти</span>
+<span class="w">    </span><span class="nt">dsk</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># метрики, показатели которых будет собирать сенсор</span>
+<span class="w">        </span><span class="c1"># по умолчанию: []</span>
+<span class="w">        </span><span class="nt">metrics</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list[DskMetric]</span>
+
+<span class="w">        </span><span class="c1"># будет ли сенсор собирать показатели по каждому диску и по каждому разделу отдельно или агрегировать по всем дискам</span>
+<span class="w">        </span><span class="c1"># по умолчанию: false</span>
+<span class="w">        </span><span class="nt">per_disk</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bool</span>
+</code></pre></div>
+</details>
 <details class="example">
-<summary>Пример промпта:</summary>
-<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<summary>Пример объекта <code>Prompt</code>:</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;interval&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;cpu&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;metrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;system&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;iowait&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;freq&quot;</span><span class="p">],</span>
@@ -694,19 +860,140 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-Поля <code>metrics</code> перечисляют показатели, которые будет собирать сенсор.</p>
-<p>Поля <code>per_core</code>, <code>per_card</code> и <code>per_disk</code> отвечают за, будет ли сенсор агрегировать показатели по всем ядрам процессора, сетевым картам и дискам или собирать по каждому ядру, карте, диску отдельно. Может быть любым значением, которое может интерпретировано как булево: <code>true</code>, <code>false</code>, <code>1</code>, <code>0</code>, <code>"T"</code>, <code>"F"</code> и т.д., но рекомендуется использовать <code>1</code> и <code>0</code> как самые <em>lightweight</em>.</p>
-<p>Если какое-то из полей пропущено (кроме <code>interval</code>), то сенсоры и сервер применят значения по умолчанию: для списков - пустой список, для булевых значений - <code>false</code>.</p>
+<blockquote>
+<p>Булевы значения могут представляться как <code>true</code>, <code>False</code>, <code>1</code>, <code>"0"</code>, <code>"T"</code> и т.д. и будут корректно распарсены (сервером и сенсорами), но лучше использовать <code>0</code> и <code>1</code> как самые <em>lightweight</em>.</p>
+</blockquote>
 </details>
-</li>
+<h3 id="report"><code>Report</code></h3>
+<details class="note">
+<summary>Описание модели <code>Report</code>:</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">Report</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># измерения загруженности процессора (по всему процессору или отдельно по каждому ядру)</span>
+<span class="w">    </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dict[CpuMetric, float] | list[dict[CpuMetric, float]]</span>
+
+<span class="w">    </span><span class="c1"># измерения сетевого трафика (по всем сетевым картам или отдельно по каждой)</span>
+<span class="w">    </span><span class="nt">net</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dict[NetMetric, float] | list[dict[NetMetric, float]]</span>
+
+<span class="w">    </span><span class="c1"># измерения использования оперативной памяти</span>
+<span class="w">    </span><span class="nt">mem</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dict[MemMetric, float]</span>
+
+<span class="w">    </span><span class="c1"># измерения использования постоянной памяти (по всем дискам или отдельно по каждому разделу каждого диска)</span>
+<span class="w">    </span><span class="nt">dsk</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dict[DskMetric, float] | list[dict[DskMetric, float]]</span>
+</code></pre></div>
+</details>
+<h3 id="specif"><code>Specif</code></h3>
+<details class="note">
+<summary>Описание модели <code>Specif</code>:</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">Specif</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># характеристики процессора</span>
+<span class="w">    </span><span class="nt">cpu</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># количество физических и логических ядер</span>
+<span class="w">        </span><span class="nt">cores</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">phys</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+<span class="w">            </span><span class="nt">logic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+
+<span class="w">        </span><span class="c1"># минимальная и максимальная частота каждого физического ядра</span>
+<span class="w">        </span><span class="nt">freq</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list[[int, int]]</span>
+
+<span class="w">    </span><span class="c1"># характеристики сетевых карт</span>
+<span class="w">    </span><span class="nt">net</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># названия обнаруженных сетевых карт</span>
+<span class="w">        </span><span class="nt">cards</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list[str]</span>
+
+<span class="w">    </span><span class="c1"># характеристики оперативной памяти</span>
+<span class="w">    </span><span class="nt">mem</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># объем оперативной памяти (исключая swap)</span>
+<span class="w">        </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+<span class="w">        </span><span class="c1"># объем swap-памяти</span>
+<span class="w">        </span><span class="nt">swap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+
+<span class="w">    </span><span class="c1"># характеристики постоянной памяти</span>
+<span class="w">    </span><span class="nt">dsk</span><span class="p">:</span>
+<span class="w">        </span><span class="c1"># список разделов диска</span>
+<span class="w">        </span><span class="nt">disks</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list[]</span><span class="p p-Indicator">:</span>
+<span class="w">            </span><span class="c1"># точка монтирования раздела</span>
+<span class="w">            </span><span class="nt">mount</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">str</span>
+<span class="w">            </span><span class="c1"># файловая система раздела</span>
+<span class="w">            </span><span class="nt">fstype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">str</span>
+<span class="w">            </span><span class="c1"># опции раздела</span>
+<span class="w">            </span><span class="nt">opts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">str</span>
+<span class="w">            </span><span class="c1"># объем дискового пространства раздела</span>
+<span class="w">            </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">int</span>
+</code></pre></div>
+</details>
+<h2 id="_5">Взаимодействие компонентов</h2>
+<blockquote>
+<p>Здесь будет описание соединения</p>
+</blockquote>
+<p>С учетом этого можно уточнить схему взаимодействия сенсоров, сервера и клиентов:</p>
+<figure>
+  <a class="glightbox" href="assets/dev-guide/components-interaction-revis.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Components Interaction" src="assets/dev-guide/components-interaction-revis.svg" width="65%" /></a>
+</figure>
+<h3 id="api">API сервера (со стороны клиента)</h3>
+<ul>
+<li><code>GET</code>: <code>sensor/group/list</code> &ndash; получить список групп сенсоров</li>
+<li><code>GET</code>: <code>sensor/list/all</code> &ndash; получить список всех сенсоров</li>
+<li><code>GET</code>: <code>sensor/list/group</code> &ndash; получить список сенсоров внутри одной группы</li>
+<li><code>GET</code>: <code>sensor/specif</code> &ndash; получить технические характеристики сенсора</li>
+<li><code>PUT</code>: <code>sensor/group/rename</code> &ndash; переименовать группу сенсоров</li>
+<li><code>PUT</code>: <code>sensor/rename</code> &ndash; переименовать сенсор (его метку или/и группу)</li>
+<li><code>GET</code>: <code>prompt/list</code> &ndash; получить список промптов</li>
+<li><code>GET</code>: <code>prompt/form</code> &ndash; получить форму редактирования промпта</li>
+<li><code>PUT</code>: <code>prompt/edit</code> &ndash; отредактировать промпт</li>
+<li><code>GET</code>: <code>monitor/schema/standard</code> &ndash; получить формат репортов (список полей, единицы измерения, словесные пояснения), приходящих при <strong>стандартном мониторинге</strong></li>
+<li><code>GET</code>: <code>monitor/schema/extended</code> &ndash; получить формат репортов (список полей, единицы измерения, словесные пояснения), приходящих при <strong>расширенном мониторинге</strong></li>
+<li><code>GET</code>: <code>monitor/schema/intraday</code> &ndash; получить формат репортов (список полей, единицы измерения, словесные пояснения), приходящих при <strong>суточном мониторинге</strong> </li>
+<li><code>GET</code>: <code>monitor/schema/analytic</code> &ndash; получить формат репортов (список полей, единицы измерения, словесные пояснения), приходящих при <strong>аналитическом мониторинге</strong></li>
+<li><code>WS</code>: <code>monitor/standard</code> &ndash; начать <strong>стандартный мониторинг</strong> в выделенном веб-сокете</li>
+<li><code>WS</code>: <code>monitor/extended</code> &ndash; начать <strong>расширенный мониторинг</strong> в выделенном веб-сокете</li>
+<li><code>WS</code>: <code>monitor/intraday</code> &ndash; начать <strong>суточный мониторинг</strong> в выделенном веб-сокете</li>
+<li><code>WS</code>: <code>monitor/analytic</code> &ndash; начать <strong>аналитический мониторинг</strong> в выделенном веб-сокете</li>
 </ul>
-<h2 id="_3">Описание протоколов</h2>
-<h3 id="_4">Клиент → сервер</h3>
-<h3 id="_5">Сервер → клиент</h3>
-<h3 id="_6">Сервер → сенсор</h3>
-<h3 id="_7">Сенсор → сервер</h3>
-<h2 id="_8">Реализация сенсоров</h2>
-<h2 id="_9">Реализация сервера</h2>
+<!-- ### Протокол сервер → сенсор
+
+#### `GET` запросы
+
+- `specif` &ndash; сервер запрашивает у текущего сенсора технические спецификации машины, на которой этот сенсор запущен.
+
+    **Ожидаемое поведение сенсора:** сенсор отправляет технические спецификации машины.
+
+#### `PUT` запросы
+
+- `prompt/<prompt_name>/<prompt_json>` &ndash; сервер уведомляет текущий сенсор о том, что существует промпт с некоторым именем, подразумевая, что вскоре может подписаться на него.
+
+    **Ожидаемое поведение сенсора:** сенсор сохраняет полученный промпт для дальнейшего использования.
+
+- `rename/<sensor_name>/<sensor_group>` &ndash; сервер переименовывает текущий сенсор. Переименование группы, которой принадлежит сенсор, означает перенос сенсора в другую группу.
+
+    **Ожидаемое поведение сенсора:** сенсор перезаписывает конфигурационный файл с новым именем и группой, делая изменения постоянными. Логирование переходит в новый файл с именем, соответсвующим новому имени и группе сенсора. 
+
+#### `SUB` запросы
+
+- `subscr/<prompt_name>/<prompt_hash>` &ndash; сервер подписывается на текущий сенсор с промптом, имеющим заданное имя и хеш.
+
+    **Ожидаемое поведение сенсора:** cенсор начинает собирать репорты в соответствии заданным промптом и отправлять и серверу.
+
+    <ins>*В случае, если промпта с таким именем сенсор не получал или не сохранял, или заданный хеш не совпадает с хешем промпта, сохраненного сенсором,*</ins> ожидается, что сенсор пошлет запрос к серверу на получение действительного промпта с заданными именем. Никакой подписки сервера с каким-либо промптом не происходит, после отправки действительного промпта серверу снова надо сделать запрос на подписку.
+
+- `unsubs` &ndash; сервер приостанавливает подписку на текущий сенсор, вне зависимости от того, был ли он подписан или нет, и если подписан, то с каким промптом.
+
+    **Ожидаемое поведение сенсора:** сенсор перестает слать какие-либо репорты серверу.
+
+### Протокол сенсор → сервер
+
+#### `GET` запросы
+
+- `prompt/<prompt_name>`
+
+#### `PUT` запросы
+
+- `specif/<sensor_id>/<sensor_name>/<sensor_group>/<specif_json>`
+- `report/<timestamp>/<prompt_hash>/<sensor_id>/<report_json>` -->
+
+<!-- ### Протокол сервер → клиент -->
+
+<h2 id="_6">Реализация сенсоров</h2>
+<h2 id="_7">Реализация сервера</h2>
 <h2 id="-">Реализация веб-приложения</h2>
 
 
@@ -727,6 +1014,12 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
         
       </main>
       
@@ -754,11 +1047,13 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.top", "toc.integrate"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
     
     
       <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
